@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>naya page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <style>
+            #demo,#demo img{
+                width: 95%;
+                height: 55vh;
+                margin: auto;
+            }
+            .tab-content{
+                padding:20px;
+            }
+            p{
+                color: aqua;
+
+            }
+            @media(max-width: 1200px){
+                p{
+                    color: orange;
+                    
+                }
+            }
+            body{
+                background-image: url("https://i.pinimg.com/474x/4e/49/ed/4e49ed21770bfd20487f9a9831b682b0.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .dropdown-item,a{
+                color:wheat;
+            }
+            h1{
+                color:grey;
+                font-family: cursive;
+              
+                
+            }
+            
+            h2,h3,h4,summary,strong{
+                color: wheat;
+
+            }
+            #ab{
+                width: 250px;
+                background-color:rgb(4, 241, 241,0.5);
+                padding: 30px 25px;
+                
+                
+            }
+            #q{
+                border:2px solid rgb(138, 136, 136);
+                border-radius: 4px;
+                width: 180px;
+                height: 25px;
+                font-style: cursive;
+                background-color:grey;
+
+            }
+            #s{
+                background-color:grey;
+            }
+            #r{
+                border:2px solid rgb(138, 136, 136);
+                border-radius: 4px;
+                width: 90px;
+                height: 25px;
+                background-color:grey;
+            }
+            ::placeholder{
+                color: black;
+            }
+            #pk{
+                width: 100%;
+                background-color: #051019;
+                opacity: 0.7;
+                padding: 0;
+            }
+            #a,strong,p,h3{
+                
+                font-size: 20px;
+            }
+
+
+
+            ::-webkit-scrollbar{
+                width: 20px;
+            }
+            ::-webkit-scrollbar-track{
+                background:#000066;
+
+            }
+            ::-webkit-scrollbar-thumb{
+                background:linear-gradient(
+                    45deg,
+                    #06dee1,
+                    #3518b6
+                );
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid ">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top mb-5">
+                <a class="navbar-brand" href="#">
+                    <img src="https://donshyam.files.wordpress.com/2020/04/screenshot_20200409-101637_picsart6315127929954933446.jpg?w=619&h=253&zoom=2" alt="brand logo" width="75px" height="40px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" onclick="$('#first_tab').trigger('click')" href="#first_tab">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Personal Information</a>
+                        <div class="dropdown-menu bg-dark text-warning">
+                            <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man">Role</a>
+                            <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man1">Date of Birth</a>
+                            <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man2">Relations</a>
+                            <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#c5">hobbies</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Education</a>
+                          <div class="dropdown-menu bg-dark text-warning">
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man3">Primary Education</a>
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man4">Secondary Education</a>
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man5">Higher Education</a>
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man6">Graduation</a>
+                          </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">achivements</a>
+                          <div class="dropdown-menu bg-dark text-warning">
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man7">Individual</a>
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man8">Team</a>
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#man9">Social</a>
+                          </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Contact</a>
+                          <div class="dropdown-menu bg-dark text-warning">
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#c6">Social Media</a>
+                              <a class="btn dropdown-item"onclick="$('#second_tab').trigger('click')" href="#p">Mail Us</a>
+                          </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Help</a>
+                          <div class="dropdown-menu bg-dark text-warning">
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#c7">About</a>
+                              <a class="btn dropdown-item" onclick="$('#second_tab').trigger('click')" href="#e">Feedback</a>
+                          </div>
+                      </li>
+                  </ul>
+                </div>  
+            </nav>
+            <br><br><br><br>
+            
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" style="text-align: left;">
+
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#first" data-toggle="tab" id="first_tab">home</a>
+                </li>
+                <li class="navitem">
+                    <a class="nav-link" href="#second" data-toggle="tab" id="second_tab">main</a>
+              </li>
+                        
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="first" class="tab-pane  active">
+                    <div id="demo" class="carousel slide justify-content-center  mt-3" data-ride="carousel" data-interval="3500" >
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://donshyam.files.wordpress.com/2020/04/screenshot_20200408-192017_instagram-012600225399972920177.jpeg" alt="img" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://donshyam.files.wordpress.com/2020/04/screenshot_20200408-194608_instagram-022964124498641444777.jpeg?w=990&h=755&zoom=2" alt="img" class="d-block w-100" >
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://donshyam.files.wordpress.com/2020/04/screenshot_20200408-192114_instagram-011882482408808899822.jpeg" alt="img" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div id="second" class="tab-pane ">
+            
+                    <div class="container-fluid mr-n3">
+                        <div class="col">
+                            <div class="ml-n5 " >
+                                <div id="pk">
+                                    <div class=" ">
+                                        <h2 id="c1">personal information</h2>
+                                        <div  id="a">
+                                            <div class="row-sm-16">
+                                                <div id="man"><br><br>
+                                                    <h4>Role</h4>
+                                                    <p>
+                                                    Every one has a role in the play called "The world"...as a part, mine is "student". The one who is in a phase of learning things,
+                                                    for his survival in this world of competition. Things i as a student should not forget is the leassons that are taught for my mistakes
+                                                    in class, games, love, frienships, mental, sickness and whatelse we keep learning our whole life not to be perfect, but to be strong in the situations.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row-sm-16">
+                                                <div id="man1"><br><br>
+                                                    <h4>Date Of Birth</h4>
+                                                    <p>
+                                                    I have born on 5th september 2001 and now i am a "majorcitizen of india" this was proudly enounced by constitution of india,by giving me 
+                                                    driverslicence,pan card  likely it is also teacher's day...
+                                                    not like others i have a safe future as a teacher, unlike the one born in december 1st.
+                                                    hahha you got me i gusse, the date and place of birth does not decide who we are ,but the belief in yourself does.    
+                                                    and coming to my place of birth i have born in khammam city in telangana.                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row-sm-16">
+                                                <div id="man2"><br><br>
+                                                    <h4>Relations</h4>
+                                                    <p>
+                                                        When the word Relations strick our mind the thing projects is family. Father and Mother are the reason why we have a family,but in the mean time the conquer has already began by a queen and she is my only sibble,my sister.
+                                                        but when difficults come, she helps me my handsfull and advises me and pushes me to target, according to me the real love exists only in family.
+                                                        “ A happy family is but an earlier heaven.” — ...<br>
+                                                        “ The family is the test of freedom; because the family is the only thing that the free man makes for himself and by himself.” — <br>
+                                                        “ You leave home to seek your fortune and, when you get it, you go home and share it with your family.” — ...<br>
+                                                    </p>
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+            
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                            <img src="https://scontent.fhyd11-1.fna.fbcdn.net/v/t1.0-9/91498478_949376798853256_2808220373139587072_o.jpg?_nc_cat=102&_nc_sid=110474&_nc_ohc=9VXOvYX-OAMAX-akzC4&_nc_ht=scontent.fhyd11-1.fna&oh=39badd8599540f58c4546aea201837fc&oe=5EA53C8C" class="rounded-circle" alt="familyphoto" width="270px" height="165px" >
+                                                            </div>
+                                                            <div class="col-sm-4">
+            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <h2 id="c2">education</h2>
+                                        <div id="a">
+                                            <div class="row-sm-16">
+                                                <div id="man3"><br><br>
+                                                    <h4>Primary Education</h4>
+                                                    <p>
+                                                        I took my primary education in v.v.central public school,khammam. which is a cbsc affiliated school, which made my schooling completely owesome by giving me many friends,
+                                                        and the best teachers. The school was built in 1982 and is now one of the best schooles in khammam, when i go there all my memories boom me up at once.
+                                                    </p>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <img src="data:image/jpeg;base64,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" alt="sclimg" height="165" width="270">
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <img src="https://scontent.fhyd11-1.fna.fbcdn.net/v/t1.0-9/c210.0.540.540a/s851x315/15095696_665524093612032_7909894588612085097_n.jpg?_nc_cat=108&_nc_sid=da31f3&_nc_ohc=zVAJtqhrpHkAX98A-2r&_nc_ht=scontent.fhyd11-1.fna&oh=dae79894554d5685bf93885a35958db1&oe=5EA621EB" alt="schoolphoto" width="270px" height="165px">
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <img src="https://scontent.fhyd11-1.fna.fbcdn.net/v/t1.0-9/16265220_709215805909527_1052825568418614317_n.jpg?_nc_cat=102&_nc_sid=110474&_nc_ohc=-iUSrRrqKeAAX8KxvEp&_nc_ht=scontent.fhyd11-1.fna&oh=55c20dec72d6ebf51ded2b6cf37e37f8&oe=5EA5C54E" alt="schoolpics" width="270px" height="165px" >
+                                                            </div>
+                                                        </div>    
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div class="row-sm-16">
+                                                <div id="man4"><br><br>
+                                                    <h4>Secondary Education</h4>
+                                                    <p>
+                                                        i took my secondary education in narayana junior collage,madhapur,hyderabad. This part of Education is totaly different , here students are kept in jails and torchered to get good grades...but being in jail nothing gets to mind and we enjoyed by forgeting everytings,made friends and memories that i will never forget till death.
+            
+                                                    </p>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+            
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <img src="data:image/jpeg;base64,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" alt="clgpics" width="270px" height="165px">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-sm-16">
+                                                <div id="man5"><br><br>
+                                                    <h4>Higher Education</h4>
+                                                    <p>
+                                                        i am pursuing my b.tech in computer engineering and science in amrita vishwa vidyapeetam,amritapuri,kerala. And this is my first time to leave my state and come to a place to find different cultures
+                                                        and traditions,and the nature here is owesome and i am deeply inlove withit.
+                                                    </p>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-sm-2">
+            
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmVYzGYTDhG2kT_uNrRQERCfg3cT7cjJEXxs72boAXKBxO4UMS&usqp=CAU" alt="btech clg pics"  width="270px" height="165px" >
+                                                            </div>
+                                                            <div class="col-sm-2">
+            
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <img src="https://qph.fs.quoracdn.net/main-qimg-49bcfe5e57a3301f66eaa410cb99b9df" alt="btech clg pics" width="270px" height="165px" >
+                                                            </div>
+                                                            <div class="col-sm-2">
+            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-sm-16">
+                                                <div id="man6"><br><br>
+                                                    <h4>graduation</h4>
+                                                    <p>
+                                                    still pursuing b.tech ...undergraduation.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h2 id="c3">achivements</h2>
+                                        <div id="a">
+                                            <div class="row-sm-16">
+                                                <div id="man7"><br><br>
+                                                    <h4 >Personal</h4>
+                                                    <p>
+                                                        According to me the thoughest achivement is taking birth, because i as a minute germcell took race to form a baby. So,everyone gets their birth of certificate as an achivement.
+                                                        my personal achivements i have got are..i won chess and pokker tournament in my school representing gandhi house in grade 5. And made many friends ..it's an achivement.
+                                                        The one achivement made me proud is that i and my friend were contesting as cultural captain in my school in grade 8, we went on compaining and gone to a class . 
+                                                    </p>
+                                                    <details>
+                                                        <summary>Read More...</summary>
+                                                            <p>
+                                                                Where a teacher is making extrem negative comments on our grades,
+                                                                that time i stood front and made my speech great and succesfull, mam remained silence and class started clapping.
+                                                                "never estimate the power of a commonman" that moment after exiting from class i thought i achived some thing.
+                                                            </p>
+                                                    </details>
+                                                </div>
+                                                <div id="man8"><br><br>
+                                                    <h4>team</h4>
+                                                    <p>
+                                                    As a team me and my school friends, have won brai(cooking competion) and gurges were mesmerised by eating our food.
+                                                    and what else won in cricket many times.
+                                                    </p>
+                                                </div>
+                                                <div id="man9"><br><br>
+                                                    <h4>social</h4>
+                                                    <p>
+                                                        no achivements yet.but will get soon.
+                                                    </p><br>
+                                                </div>
+                                            </div>
+                                        </div><br><br>
+                                        <h2 id="c5">hobbies</h2>
+                                        <div id="a">
+                                            <div class="row-sm-16">
+                                                <p>
+                                                According to me a hobby is a regular activity done for enjoyment, typically during one's leisure time, not professionally and not for pay. my hobbies are watching cinemas,playing sports ,eating tasty food,painting,drawing,cooking and some 
+                                                times being into things not of my kind. 
+                                                </p>
+                                            </div>
+                                        </div><br><br>
+                                        <h2 id="c6">social media</h2>
+                                        <div id="a">
+                                            <div class="row-sm-16">
+                                                <p>
+                                                Intraction made easy with social media...u can reach large audiences quite offen,You have a direct connection with your audience.You can create organic content. you can write someting about your self and read about others,
+                                                and ofcourse you can interact. click on any media below to interact with me.
+                                                
+                                                </p>
+                                                <a href="https://www.facebook.com/profile.php?id=100004559506954" target="_blank">
+                                                    <img src="https://media.giphy.com/media/ijEiXYEo9DBxm/giphy.gif" alt="HTML tutorial" style="width:55px;height:55px;border:0" hspace="20">
+                                                </a>
+                                                
+                                                <a href="https://www.instagram.com/shyaem/" target="_blank">
+                                                    <img src="https://media.giphy.com/media/l41YmiCZ8HXvVl5M4/giphy.gif" alt="HTML tutorial" style="width:55px;height:55px;border:0" hspace="20">
+                                                </a>
+            
+                                                <a href="https://twitter.com/ShyamPr40689341" target="_blank">
+                                                    <img src="https://media.tenor.com/images/b1eaa5ff52f139b6518fec725306bba2/tenor.gif" alt="HTML tutorial" style="width:55px;height:55px;border:1"hspace="20" >
+                                                </a>
+            
+                                                <a href="https://accounts.snapchat.com/accounts/snapcodes" target="_blank">
+                                                    <img src="https://media.giphy.com/media/CBAno7M9x6sGA/giphy.gif" alt="HTML tutorial" style="width:55px;height:55px;border:1" hspace="20" >
+                                                </a>
+                                            </div>
+                                        </div><br><br>
+                                        <h2 id="c7">about</h2>
+                                        <div id="a">
+                                            <div class="row-sm-16">
+                                                <p>
+                                                    This is a website where you are exploring my life portfolio which is Developed by me as Infight webcreaters. This site contains two frames, and is made of four html pages,
+                                                    and the css file is inserted in the html file  itself. so, need not create extra files, and the sources for pictures are from varies web photos kept in facebook and varies such sites. <br>
+                                                </p>
+                                                <details>
+                                                    <summary>Read More...</summary>
+                                                    <p>This site also has various menus and dropdown lists...and using of this cartoon theme brought greate desigh to the page.
+                                                    so, please kindle explore every part of page and give your feedback.
+                                                    </p>
+                                                </details>
+                                            </div>
+                                        </div>
+                                        <h2>Contact</h2>
+                                            <div class="row-sm-16">
+                                                <div class="text-center" id="z1">
+                                                    <strong>Give your details. So, We can <br>
+                                                        contact you later</strong><br><br>
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div id="ab">
+                                                                        <form class="form-container ">
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="block" id="q" class="form-control" name="name" placeholder="  Enter Name" required><br><br>
+                                                                                <input type="email" class="block" id="q" class="form-control" name="name" placeholder="  xyz@gmail.com" required><br><br>
+                                                                                <input type="text" class="block" id="q" class="form-control" name="name" placeholder="  Enter Subject" required><br><br>
+                                                                                <textarea name="" class="block" id="s" class="form-control" cols="22" rows="3" placeholder="Enter Feedback"></textarea><br><br>
+                                                                                <input type="submit" id="r" value="submit" >
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 text-light mt-5 pt-5 pl-5 ">
+                                                                    <p>Developed by :</p>
+                                                                </div>
+                                                                <div class="col-sm-4 bg-body mt-5 pt-5 ">
+                                                                    <img src="https://scontent.fhyd11-1.fna.fbcdn.net/v/t1.0-9/91264494_949272492197020_2298150134376038400_o.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_ohc=jH5MJleqhUYAX9FXu-j&_nc_ht=scontent.fhyd11-1.fna&oh=f1810b8d6bd88edd8b0540804c41c7aa&oe=5EA361E3" alt="company logo"width="250px" height="150Px">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        <div class="text-center">
+                                            <div class="row-sm-16 " >
+                                                <div id="p">
+                                                    <p ><xx-large>contact us by: </xx-large><a href="mailto:shyamimmadi7@gmail.com">click to mail us</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="e"><br><br>
+                                            <div class="row-sm-16"></div>
+                                                <div class="text-center">
+                                                    <h3>Rate Us With Emoji</h3>
+                                                    <a href="z2.html#ab" onclick="alert('rating hasbeen submited')">
+                                                        <img src="https://i.pinimg.com/originals/bc/a3/0f/bca30f5f390e1853c679952545c86e72.gif" alt="emojis" style="width:55px;height:55px;border:0" hspace="10">
+                                                    </a>
+            
+                                                    <a href="z2.html#ab" onclick="alert('rating hasbeen submited')" >
+                                                        <img src="https://i.pinimg.com/originals/80/17/c6/8017c6303e6150dc1d58915359dbfecb.gif" alt="emojis" style="width:55px;height:55px;border:0" hspace="10">
+                                                    </a>
+                                                    
+                                                    <a href="z2.html#ab" onclick="alert('rating hasbeen submited')">
+                                                        <img src="https://i.pinimg.com/originals/0e/3e/e5/0e3ee551876e1ad2a39f89e4adf9168a.gif" alt="emojis" style="width:65px;height:65px;border:0" hspace="10">
+                                                    </a>
+            
+                                                    <a href="z2.html#ab" onclick="alert('rating hasbeen submited')" >
+                                                        <img src="https://d1j8pt39hxlh3d.cloudfront.net/uploads/beaming_face_with_smiling_eyes_256_2.gif" alt="emojis" style="width:65px;height:60px;border:1"hspace="10" >
+                                                    </a>
+                                                    <a href="z2.html#ab" onclick="alert('rating hasbeen submited')" >
+                                                        <img src="https://media2.giphy.com/media/Lqx1czoPLTQg3I68d1/source.gif" alt="emojis" style="width:65px;height:60px;border:1"hspace="10" >
+                                                    </a><br>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+    </body>
+</html>
